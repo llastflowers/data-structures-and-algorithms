@@ -1,4 +1,4 @@
-Table of Contents
+## Table of Contents
 
 1. [Array Reverse](./Challenges/arrayReverse/array-reverse.js)
 
