@@ -2,6 +2,8 @@
 
 1. [Array Reverse](./Challenges/arrayReverse/array-reverse.js)
 
+2. [Array Shift](./Challenges/arrayShift/array-shift.js)
+
 -----
 
 # 1. Reverse an Array
@@ -21,4 +23,18 @@ It seems like one possible solution would be to for-loop backwards through the a
 - continue to loop through the array from end to beginning, adding each array item to the new array in reverse
 - result should be a reversed version of the original array
 
-# 2. 
+
+
+# 2. Shift an Array
+Write a function that takes in an array and a value to be added, and returns an array with the new value added at the middle index, without using built-in JS methods.
+
+## Challenge
+Write a function that takes in an array and a value to be added, and returns an array with the new value added at the middle index, without using built-in JS methods.
+
+## Approach & Efficiency
+One approach to doing this may be to loop through the array until the halfway point (by seeing if that index %2 equals half of the array.length/if that index x2 equals array.length?), and then I have to insert a new value after that array item, without using push, which I'm going to have to research how to do!
+
+## Solution ("Whiteboarding")
+- I need to loop through an array to the halfway point
+- I need to stop the loop at this index by determining that the index x2 is equal to array.length
+- I need to insert the new item into the array at this position
