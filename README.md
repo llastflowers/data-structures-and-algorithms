@@ -50,7 +50,10 @@ Write a function that takes in a sorted array and a search key and returns the i
 Write a function that takes in a sorted array and a search key and returns the index of the array's element that is equal to the search key, or -1 if the element does not exist, without using built-in methods.
 
 ## Approach & Efficiency
+I am going to try to for-loop through the array and return i if the element is in the array, then try a nested for-loop to return -1 if it is not found (because I think an if/else will return -1 if the item at position 0 is not equal to the search key).
 
 
 ## Solution ("Whiteboarding")
-- I need to 
+- I need to loop through the array to look for an element that is equal to the search key
+- If the element is found, I need to return the index of the element
+- If the element is not found, I need to return -1
