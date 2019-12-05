@@ -1,15 +1,16 @@
 function binarySearch(sortedArray, searchKey) {
-    for (let i = 0; i < sortedArray.length; i++) {      
+    let result;
+    for (let i = 0; i < sortedArray.length; i++) {   
         if (searchKey === sortedArray[i]) {
-            return i;
+            result = i;
         }
-
-        // for (let i = 0; i < sortedArray.length; i++) {      
-        //     if (searchKey !== sortedArray[i]) {
-        //         return -1;
-        //     }
-        // }   
     }
+    if (result === undefined) {
+        result = -1;
+    }
+    return result;
 }
 
-console.log(binarySearch([1, 2, 3, 4, 5], 3));
+console.log(binarySearch([1, 2, 3, 4, 5], 7));
+
+console.log(binarySearch([1, 2, 3, 4, 5], 4));
