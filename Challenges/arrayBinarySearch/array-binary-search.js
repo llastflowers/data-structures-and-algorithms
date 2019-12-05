@@ -14,3 +14,5 @@ function binarySearch(sortedArray, searchKey) {
 console.log(binarySearch([1, 2, 3, 4, 5], 7));
 
 console.log(binarySearch([1, 2, 3, 4, 5], 4));
+
+module.exports = { binarySearch };
