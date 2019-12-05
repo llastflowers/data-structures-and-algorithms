@@ -44,10 +44,10 @@ One approach to doing this may be to loop through the array until the halfway po
 
 
 # 3. Binary Search
-Write a function that takes in a sorted array and a search key, without using built-in methods.
+Write a function that takes in a sorted array and a search key and returns the index of the array's element that is equal to the search key, or -1 if the element does not exist, without using built-in methods.
 
 ## Challenge
-Write a function that takes in a sorted array and a search key, without using built-in methods.
+Write a function that takes in a sorted array and a search key and returns the index of the array's element that is equal to the search key, or -1 if the element does not exist, without using built-in methods.
 
 ## Approach & Efficiency
 
