@@ -6,6 +6,8 @@
 
 3. [Binary Search](./Challenges/arrayBinarySearch/array-binary-search.js)
 
+6. [Linked List Insertions](./Challenges/linkedList/linked-list.js)
+
 -----
 
 # 1. Reverse an Array
@@ -57,3 +59,26 @@ I am going to try to for-loop through the array and return i if the element is i
 - I need to loop through the array to look for an element that is equal to the search key
 - If the element is found, I need to return the index of the element
 - If the element is not found, I need to return -1
+
+
+
+# 3. Linked List Insertion
+Write methods for the Linked List class:
+- .append(value)
+- .insertBefore(value, newVal)
+- .insertAfter(value, newVal)
+
+## Challenge
+Write methods for the Linked List class:
+- .append(value)
+- .insertBefore(value, newVal)
+- .insertAfter(value, newVal)
+
+## Approach & Efficiency
+
+
+
+## Solution ("Whiteboarding")
+- I need to loop through the nodes until the end and then add a new node with the given value
+- I need to loop through the nodes until I find the given value and then insert a new node with the given new value right before it
+- I need to loop through the nodes until I find the given value and then insert a new node with the given new value right after it
