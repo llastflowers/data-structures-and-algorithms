@@ -47,12 +47,35 @@ class LinkedList {
         currentNode.next = node;
     }
     
-    insertBefore() {
-
+    insertBefore(valueToInsert, givenValue){
+        const node = new Node(valueToInsert);
+        let currentNode = this.head;
+        if (currentNode.value === givenValue){
+            node.next = this.head;
+            this.head = node;
+            return true;
+        }
+        let previousNode;
+        while (currentNode.value !== givenValue){
+            previousNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        node.next = currentNode;
+        previousNode.next = node;
+        return true;
     }
-
-    insertAfter() {
-
+    
+    insertAfter(valueToInsert, givenValue){
+        const node = new Node(valueToInsert);
+        let currentNode = this.head;
+        while (currentNode.value !== givenValue){
+            currentNode = currentNode.next;
+        }
+        let previousNode = currentNode;
+        currentNode = currentNode.next;
+        node.next = currentNode;
+        previousNode.next = node;
+        return true;
     }
 
 

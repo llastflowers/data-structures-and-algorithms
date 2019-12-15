@@ -75,7 +75,7 @@ Write methods for the Linked List class:
 - .insertAfter(value, newVal)
 
 ## Approach & Efficiency
-
+I already did the append(value) in the group whiteboarding exercise so I copied the solution here. I'll use 'valueToInsert' and 'givenValue' as arguments for the second two methods. I'll build on the LLs from my previous tests to make sure these are working.
 
 
 ## Solution ("Whiteboarding")
