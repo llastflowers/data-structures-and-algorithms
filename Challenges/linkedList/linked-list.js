@@ -46,6 +46,16 @@ class LinkedList {
         }
         currentNode.next = node;
     }
+    
+    insertBefore() {
+
+    }
+
+    insertAfter() {
+
+    }
+
+
 }
 
 module.exports = { LinkedList, Node };
