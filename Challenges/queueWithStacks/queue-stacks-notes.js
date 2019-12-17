@@ -33,26 +33,37 @@ class Stack {
     }
 }
 
-class PseudoQueue {
+class Queue {
     constructor() {
-        this.stack1 = new Stack();
-        this.stack2 = new Stack();
+        this.front = null;
+        this.back = null;
     }
 
     enqueue(value) {
-        while (!this.stack1.isEmpty) {
-            this.stack1.push(this.stack2.pop(value));   
+        const node = new Node(value, null);
+        if (!this.front) {
+            this.front = node;
         }
+        this.back.next = node;
+        this.back = node;
     }
 
-    dequeue(value) {
-        
+    dequeue() {
+        if (!this.isEmpty()) return null;
+
+        const front = this.front;
+        this.front = this.front.next;
+        if (!this.front) this.back = null;
+
+        return front;
     }
 
-    toString() {
-        return this.stack1.toString()
-            .concat(' -> ');
+    peek() {
+        if (this.isEmpty()) return null;
+        return this.front.value;
+    }
+
+    isEmpty() {
+        return !this.front;
     }
 }
-
-module.exports = { PseudoQueue, Stack, Node };

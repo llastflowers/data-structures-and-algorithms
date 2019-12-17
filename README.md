@@ -92,6 +92,7 @@ Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, thi
 The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
 
 ## Approach & Efficiency
-
+Make two stacks with one being empty; move all the items from one stack to the other in order to effectively reverse them; perform methods; move back to other stack to return to normal stack order.
 
 ## Solution ("Whiteboarding")
+[Whiteboard Image](./assets/queue-with-stacks.jpg)
