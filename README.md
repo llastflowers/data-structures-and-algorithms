@@ -8,10 +8,11 @@
 
 6. [Linked List Insertions](./Challenges/linkedList/linked-list.js)
 
+11. [Queue With Stacks](./Challenges/queueWithStacks/queue-with-stacks.js)
+
 -----
 
 # 1. Reverse an Array
-Write a function that takes in an array and reverses it without using built-in JS methods.
 
 ## Challenge
 Write a function that takes in an array and reverses it without using built-in methods.
@@ -30,7 +31,6 @@ It seems like one possible solution would be to for-loop backwards through the a
 
 
 # 2. Shift an Array
-Write a function that takes in an array and a value to be added, and returns an array with the new value added at the middle index, without using built-in JS methods.
 
 ## Challenge
 Write a function that takes in an array and a value to be added, and returns an array with the new value added at the middle index, without using built-in methods.
@@ -46,7 +46,6 @@ One approach to doing this may be to loop through the array until the halfway po
 
 
 # 3. Binary Search
-Write a function that takes in a sorted array and a search key and returns the index of the array's element that is equal to the search key, or -1 if the element does not exist, without using built-in methods.
 
 ## Challenge
 Write a function that takes in a sorted array and a search key and returns the index of the array's element that is equal to the search key, or -1 if the element does not exist, without using built-in methods.
@@ -62,11 +61,7 @@ I am going to try to for-loop through the array and return i if the element is i
 
 
 
-# 3. Linked List Insertion
-Write methods for the Linked List class:
-- .append(value)
-- .insertBefore(value, newVal)
-- .insertAfter(value, newVal)
+# 6. Linked List Insertion
 
 ## Challenge
 Write methods for the Linked List class:
@@ -82,3 +77,21 @@ I already did the append(value) in the group whiteboarding exercise so I copied 
 - I need to loop through the nodes until the end and then add a new node with the given value
 - I need to loop through the nodes until I find the given value and then insert a new node with the given new value right before it
 - I need to loop through the nodes until I find the given value and then insert a new node with the given new value right after it
+
+
+
+# 11. Linked List Insertion
+
+## Challenge
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+- enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+
+- dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
+
+## Approach & Efficiency
+
+
+## Solution ("Whiteboarding")
