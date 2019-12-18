@@ -22,7 +22,7 @@ class Queue {
     }
 
     dequeue() {
-        if (!this.isEmpty()) return null;
+        if (this.isEmpty()) return null;
 
         const front = this.front;
         this.front = this.front.next;
@@ -53,8 +53,8 @@ class Queue {
 
 class AnimalShelter {
     constructor() {
-        this.dogQueue = new Queue;
-        this.catQueue = new Queue;
+        this.dogQueue = new Queue();
+        this.catQueue = new Queue();
     }
 
     enqueue(animal) {
@@ -66,9 +66,14 @@ class AnimalShelter {
         else return;
     }
 
-    dequeue(pref) {
-      
+    animalDequeue(pref) {
+        if (pref === 'cat') {
+            this.catQueue.dequeue();
+        } else if (pref === 'dog') {
+            this.dogQueue.dequeue();
+        }
+        else return null;
     }
 }
 
-module.exports = { AnimalShelter, Queue, Node };
+module.exports = { AnimalShelter };
