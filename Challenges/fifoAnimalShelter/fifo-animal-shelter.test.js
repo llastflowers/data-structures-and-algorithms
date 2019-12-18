@@ -1,11 +1,10 @@
 const { AnimalShelter } = require('./fifo-animal-shelter');
 
 describe('AnimalShelter class', () => {
-    it('adds a new animal to AnimalShelter queue', () => {
-        const animalshelter = new AnimalShelter;
-        animalshelter.enqueue(20);
-        animalshelter.enqueue(15);
-        animalshelter.enqueue(10);
-        expect(animalshelter.toString()).toEqual('5 -> 10 -> 15 -> 20');
+    it('adds a new cat to AnimalShelter cat queue', () => {
+        const animalShelter = new AnimalShelter();
+
+        animalShelter.enqueue({ name: 'Willow', type: 'cat'});
+        expect(animalShelter.catQueue.toString()).toEqual('Willow , ');
     });
 });

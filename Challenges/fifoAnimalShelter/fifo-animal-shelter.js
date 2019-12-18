@@ -5,34 +5,70 @@ class Node {
     }
 }
 
-class AnimalShelter {
+class Queue {
     constructor() {
         this.front = null;
         this.back = null;
     }
 
-    enqueue(animal) {
+    enqueue(value) {
         const node = new Node(value, null);
         if (!this.front) {
             this.front = node;
+        } else {
+            this.back.next = node;
         }
-        this.back.next = node;
         this.back = node;
     }
 
-    dequeue(pref) {
-      
+    dequeue() {
+        if (!this.isEmpty()) return null;
+
+        const front = this.front;
+        this.front = this.front.next;
+        if (!this.front) this.back = null;
+
+        return front;
     }
 
-    string() {
+    peek() {
+        if (this.isEmpty()) return null;
+        return this.front.value;
+    }
+
+    isEmpty() {
+        return !this.front;
+    }
+
+    toString() {
         let currentNode = this.front;
         let string = ''; 
         while (currentNode) {
-            string += currentNode.value.toString() + ' , ';
+            string += currentNode.value.name.toString() + ' , ';
             currentNode = currentNode.next;
         }
         return string; 
     }
 }
 
-module.exports = { AnimalShelter };
+class AnimalShelter {
+    constructor() {
+        this.dogQueue = new Queue;
+        this.catQueue = new Queue;
+    }
+
+    enqueue(animal) {
+        if (animal.type === 'cat') {
+            this.catQueue.enqueue(animal);
+        } else if (animal.type === 'dog') {
+            this.dogQueue.enqueue(animal);
+        }
+        else return;
+    }
+
+    dequeue(pref) {
+      
+    }
+}
+
+module.exports = { AnimalShelter, Queue, Node };
