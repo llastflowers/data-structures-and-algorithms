@@ -109,8 +109,24 @@ Implement the following methods:
 - dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
 ## Approach & Efficiency
-Make a queue...
+Make two queues; one each for cats and dogs. Look for the correct queue based on 'pref'.
 
 ## Solution ("Whiteboarding")
 [Whiteboard Image](./assets/fifo-animal-shelter.jpg)
 
+
+
+# 13. Multi Bracket Validation
+
+## Challenge
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+## Approach & Efficiency
+Establish which brackets are considered "matching." Make a stack, since brackets are FILO. Compare each bracket to any brackets in the stack. If there is a matching bracket already in the stack, pop out the matching brackets. If not, push the new bracket into the stack. Continue until all brackets have been processed this way. If the stack is empty, return true. If any brackets remain, return false.
+
+## Solution ("Whiteboarding")
+[Whiteboard Image](./assets/....jpg)
