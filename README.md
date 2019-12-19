@@ -8,6 +8,8 @@
 
 6. [Linked List Insertions](./Challenges/linkedList/linked-list.js)
 
+7. [Linked List: k-th From End](./Challenges/linkedList/linked-list.js)
+
 11. [Queue With Stacks](./Challenges/queueWithStacks/queue-with-stacks.js)
 
 -----
@@ -77,6 +79,20 @@ I already did the append(value) in the group whiteboarding exercise so I copied 
 - I need to loop through the nodes until the end and then add a new node with the given value
 - I need to loop through the nodes until I find the given value and then insert a new node with the given new value right before it
 - I need to loop through the nodes until I find the given value and then insert a new node with the given new value right after it
+
+
+
+# 7. Linked List: k-th From End
+
+## Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+I need to loop through the list and stop 'k' nodes before the end.
+
+
+## Solution ("Whiteboarding")
+- I need to loop through the nodes until the end and then go back 'k' places, or stop 'k' spaces before the end. Then, I need to return the value of the node in that position.
 
 
 

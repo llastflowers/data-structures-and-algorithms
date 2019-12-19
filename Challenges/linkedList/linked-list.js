@@ -78,7 +78,13 @@ class LinkedList {
         return true;
     }
 
-
+    kthFromEnd(k){
+        let currentNode = this.head;
+        for (let i = 0; i < this.length - k - 1; i++){ 
+            currentNode = currentNode.next; 
+        }
+        return currentNode.value;
+    }
 }
 
 module.exports = { LinkedList, Node };

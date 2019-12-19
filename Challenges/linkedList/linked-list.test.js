@@ -34,4 +34,11 @@ describe('LinkedList Class', () => {
         linkedList.insertAfter(1, 0);
         expect(linkedList.toString()).toEqual('4 -> 3 -> 2 -> 1 -> 0 -> 1');
     });
+
+    it('returns the node’s value that is k from the end of the linked list', () => {
+        linkedList.insert(2);
+        linkedList.insert(3);
+        linkedList.insert(4);
+        expect(linkedList.kthFromEnd(1)).toEqual(4);
+      });
 });
