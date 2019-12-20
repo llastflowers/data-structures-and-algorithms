@@ -105,7 +105,8 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 
 
 ## Solution ("Whiteboarding")
-- I need to...
+- I need to create two linked lists
+- 
 
 
 
