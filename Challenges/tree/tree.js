@@ -1,5 +1,5 @@
-class BinarySearchTree {
-    constructor(){
+class Node {
+    constructor(value, leftChild, rightChild){
 
     }
 
@@ -8,6 +8,38 @@ class BinarySearchTree {
     }
 
     contain(){
-        
+
+    }
+}
+
+class BinaryTree {
+    constructor(){
+
+    }
+
+    preOrder(){
+
+    }
+
+    inOrder(){
+
+    }
+
+    postOrder(){
+
+    }
+}
+
+class BinarySearchTree {
+    constructor(){
+
+    }
+
+    add(value) {
+
+    }
+
+    contain(value){
+
     }
 }
