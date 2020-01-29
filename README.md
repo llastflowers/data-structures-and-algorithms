@@ -105,9 +105,10 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 
 
 ## Solution ("Whiteboarding")
-- I need to create two linked lists
-- 
-
+- I need to create a function that takes in two linkde lists
+- refer to the head of each list and the next item after the head of each list
+- put the head of list one first, followed by the head of list two, followed by the head.next of list one, head.next of list two, etc.
+- return the first list once the loop has completed
 
 
 # 11. Queue With Stacks
