@@ -1,8 +1,8 @@
 class Node {
-  constructor(value, leftChild = null, rightChild = null){
+  constructor(value, left = null, right = null){
     this.value = value;
-    this.leftChild = leftChild;
-    this.rightChild = rightChild;
+    this.left = left;
+    this.right = right;
   }
 }
 
@@ -37,18 +37,18 @@ class BinarySearchTree {
     } else {
       const addNode = function(node) {
         if(value < node.value) {
-          if(node.leftChild === null) {
-            node.leftChild = new Node(value);
+          if(node.left === null) {
+            node.left = new Node(value);
             return;
-          } else if(node.leftChild !== null) {
-            return addNode(node.leftChild);
+          } else if(node.left !== null) {
+            return addNode(node.left);
           }
         } else if(value > node.value) {
-          if(node.rightChild === null) {
-            node.rightChild = new Node(value);
+          if(node.right === null) {
+            node.right = new Node(value);
             return;
-          } else if(node.rightChild !== null) {
-            return addNode(node.rightChild);
+          } else if(node.right !== null) {
+            return addNode(node.right);
           }
         } else {
           return null;
@@ -65,7 +65,7 @@ class BinarySearchTree {
         return true;
       }
       if(value < current.value) {
-        current = current.leftChild;
+        current = current.left;
       } else {
         current = current.right;
       }
