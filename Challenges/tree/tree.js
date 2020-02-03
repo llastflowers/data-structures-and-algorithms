@@ -26,6 +26,14 @@ class BinaryTree {
   breadthFirst(){
     
   }
+
+  findMaxValue(tree){    
+    //possible approach:
+    // start at root
+    // use similar logic as breadth-first with queues for searching the tree
+    // if/then - compare values in queue and keep the max value in the queue until the end
+    // return value in queie
+  }
 }
 
 class BinarySearchTree {
