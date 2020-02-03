@@ -8,7 +8,7 @@ describe('Binary Tree', () => {
   it('Can successfully instantiate a tree with a single root node', () => {
     const tree = new BinarySearchTree();
     tree.add(5);
-    expect(tree.root).toEqual({ 'leftChild': null, 'rightChild': null, 'value': 5 });
+    expect(tree.root).toEqual({ 'left': null, 'right': null, 'value': 5 });
   });
 
   it('Can successfully add a left child and right child to a single root node', () => {
